@@ -52,3 +52,7 @@ Traceback (most recent call last):
   File "C:\Program Files\Python37\lib\smtplib.py", line 359, in send
     raise SMTPServerDisconnected('please run connect() first')
 smtplib.SMTPServerDisconnected: please run connect() first
+2019-02-28 20:15:18,541 INFO: Microblog startup [in C:\Users\veshi\Desktop\Projects\Site_Moneta\moneta\app\__init__.py:48]
+2019-02-28 20:22:25,946 INFO: Microblog startup [in C:\Users\veshi\Desktop\Projects\Site_Moneta\moneta\app\__init__.py:48]
+2019-02-28 20:23:33,656 INFO: Microblog startup [in C:\Users\veshi\Desktop\Projects\Site_Moneta\moneta\app\__init__.py:48]
+2019-02-28 20:24:00,315 INFO: Microblog startup [in C:\Users\veshi\Desktop\Projects\Site_Moneta\moneta\app\__init__.py:48]
