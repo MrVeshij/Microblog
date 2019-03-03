@@ -34,6 +34,7 @@ def create_app(config_class=Config):
     mail.init_app(app)
     bootstrap.init_app(app)
     moment.init_app(app)
+    if not db.table(Post):db.create_all()
 
 
     from app.errors import bp as errors_bp
@@ -76,7 +77,7 @@ def create_app(config_class=Config):
             file_handler.setFormatter(logging.Formatter('%(asctime)s %(levelname)s: %(message)s [in %(pathname)s:%(lineno)d]'))
             file_handler.setLevel(logging.INFO)
             app.logger.addHandler(file_handler)
-            
+
         app.logger.setLevel(logging.INFO)
         app.logger.info('Microblog startup')
 
