@@ -105,3 +105,4 @@ NameError: name 'app' is not defined
 2019-03-03 12:55:13,630 INFO: Microblog startup [in C:\Users\veshi\Desktop\Projects\Site_Moneta\moneta\app\__init__.py:74]
 2019-03-03 13:01:04,868 INFO: Microblog startup [in C:\Users\veshi\Desktop\Projects\Site_Moneta\moneta\app\__init__.py:74]
 2019-03-03 13:04:29,086 INFO: Microblog startup [in C:\Users\veshi\Desktop\Projects\Site_Moneta\moneta\app\__init__.py:74]
+2019-03-03 15:00:20,662 INFO: Microblog startup [in C:\Users\veshi\Desktop\Projects\Site_Moneta\moneta\app\__init__.py:81]
