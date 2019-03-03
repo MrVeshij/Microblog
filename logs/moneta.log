@@ -56,3 +56,52 @@ smtplib.SMTPServerDisconnected: please run connect() first
 2019-02-28 20:22:25,946 INFO: Microblog startup [in C:\Users\veshi\Desktop\Projects\Site_Moneta\moneta\app\__init__.py:48]
 2019-02-28 20:23:33,656 INFO: Microblog startup [in C:\Users\veshi\Desktop\Projects\Site_Moneta\moneta\app\__init__.py:48]
 2019-02-28 20:24:00,315 INFO: Microblog startup [in C:\Users\veshi\Desktop\Projects\Site_Moneta\moneta\app\__init__.py:48]
+2019-03-02 00:23:28,552 INFO: Microblog startup [in C:\Users\veshi\Desktop\Projects\Site_Moneta\moneta\app\__init__.py:51]
+2019-03-03 12:11:59,835 INFO: Microblog startup [in C:\Users\veshi\Desktop\Projects\Site_Moneta\moneta\app\__init__.py:74]
+2019-03-03 12:13:32,645 INFO: Microblog startup [in C:\Users\veshi\Desktop\Projects\Site_Moneta\moneta\app\__init__.py:74]
+2019-03-03 12:13:48,991 INFO: Microblog startup [in C:\Users\veshi\Desktop\Projects\Site_Moneta\moneta\app\__init__.py:74]
+2019-03-03 12:15:21,354 INFO: Microblog startup [in C:\Users\veshi\Desktop\Projects\Site_Moneta\moneta\app\__init__.py:74]
+2019-03-03 12:15:40,209 INFO: Microblog startup [in C:\Users\veshi\Desktop\Projects\Site_Moneta\moneta\app\__init__.py:74]
+2019-03-03 12:30:50,358 INFO: Microblog startup [in C:\Users\veshi\Desktop\Projects\Site_Moneta\moneta\app\__init__.py:74]
+2019-03-03 12:50:48,973 INFO: Microblog startup [in C:\Users\veshi\Desktop\Projects\Site_Moneta\moneta\app\__init__.py:74]
+2019-03-03 12:51:08,031 ERROR: Exception on /auth/reset_password_request [POST] [in c:\users\veshi\desktop\projects\site_moneta\flask\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\veshi\desktop\projects\site_moneta\flask\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\veshi\desktop\projects\site_moneta\flask\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\veshi\desktop\projects\site_moneta\flask\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\veshi\desktop\projects\site_moneta\flask\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\veshi\desktop\projects\site_moneta\flask\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\veshi\desktop\projects\site_moneta\flask\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\veshi\Desktop\Projects\Site_Moneta\moneta\app\auth\routes.py", line 60, in reset_password_request
+    send_password_reset_email(user)
+  File "C:\Users\veshi\Desktop\Projects\Site_Moneta\moneta\app\auth\email.py", line 23, in send_password_reset_email
+    sender=app.config['ADMINS'][0],
+NameError: name 'app' is not defined
+2019-03-03 12:54:01,616 ERROR: Exception on /auth/reset_password_request [POST] [in c:\users\veshi\desktop\projects\site_moneta\flask\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\veshi\desktop\projects\site_moneta\flask\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\veshi\desktop\projects\site_moneta\flask\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\veshi\desktop\projects\site_moneta\flask\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\veshi\desktop\projects\site_moneta\flask\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\veshi\desktop\projects\site_moneta\flask\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\veshi\desktop\projects\site_moneta\flask\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\veshi\Desktop\Projects\Site_Moneta\moneta\app\auth\routes.py", line 60, in reset_password_request
+    send_password_reset_email(user)
+  File "C:\Users\veshi\Desktop\Projects\Site_Moneta\moneta\app\auth\email.py", line 23, in send_password_reset_email
+    sender=current_app.config['ADMINS'][0],
+NameError: name 'app' is not defined
+2019-03-03 12:55:13,630 INFO: Microblog startup [in C:\Users\veshi\Desktop\Projects\Site_Moneta\moneta\app\__init__.py:74]
+2019-03-03 13:01:04,868 INFO: Microblog startup [in C:\Users\veshi\Desktop\Projects\Site_Moneta\moneta\app\__init__.py:74]
+2019-03-03 13:04:29,086 INFO: Microblog startup [in C:\Users\veshi\Desktop\Projects\Site_Moneta\moneta\app\__init__.py:74]

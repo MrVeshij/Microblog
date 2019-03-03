@@ -21,19 +21,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ url_for('index') }}">Домашняя страница</a>
+                <a class="navbar-brand" href="{{ url_for('main.index') }}">Домашняя страница</a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url_for('explore') }}">Все посты</a></li>
+                    <li><a href="{{ url_for('main.explore') }}">Все посты</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     {% if current_user.is_anonymous %}
-                    <li><a href="{{ url_for('login') }}">Авторизация</a></li>
-                    <li><a href="{{ url_for('register') }}">Регистрация</a></li>
+                    <li><a href="{{ url_for('auth.login') }}">Авторизация</a></li>
+                    <li><a href="{{ url_for('auth.register') }}">Регистрация</a></li>
                     {% else %}
-                    <li><a href="{{ url_for('user', username=current_user.username) }}">Обо мне</a></li>
-                    <li><a href="{{ url_for('logout') }}">Выход</a></li>
+                    <li><a href="{{ url_for('main.user', username=current_user.username) }}">Обо мне</a></li>
+                    <li><a href="{{ url_for('auth.logout') }}">Выход</a></li>
                     {% endif %}
                 </ul>
             </div>
