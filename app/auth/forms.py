@@ -18,7 +18,7 @@ class RegistrationForm(FlaskForm):
     email = StringField('Почта', validators=[DataRequired(), Email()])
     password = PasswordField('Пароль', validators=[DataRequired()])
     password2 = PasswordField(
-            'Повторите пароль', validators=[DataRequired(), EqualTo('Пароль')])
+            'Повторите пароль', validators=[DataRequired(), EqualTo(password)])
     submit = SubmitField('Регистрация')
 
 
@@ -42,5 +42,5 @@ class ResetPasswordRequestForm(FlaskForm):
 class ResetPasswordForm(FlaskForm):
     password = PasswordField('Пароль', validators=[DataRequired()])
     password2 = PasswordField(
-            'Повторите пароль', validators=[DataRequired(), EqualTo('Пароль')])
+            'Повторите пароль', validators=[DataRequired(), EqualTo(password)])
     submit = SubmitField('Поменять пароль')
