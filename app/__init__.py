@@ -34,7 +34,6 @@ def create_app(config_class=Config):
     mail.init_app(app)
     bootstrap.init_app(app)
     moment.init_app(app)
-    db.create_all()
 
 
     from app.errors import bp as errors_bp
