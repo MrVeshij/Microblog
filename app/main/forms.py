@@ -23,6 +23,6 @@ class EditProfileForm(FlaskForm):
 
 class PostForm(FlaskForm):
     post = TextAreaField('Скажите что-нибудь', validators=[
-        DataRequired(), Length(min=1, max=140)])
+        DataRequired(), Length(min=1)])
     submit = SubmitField('Отправить')
 
